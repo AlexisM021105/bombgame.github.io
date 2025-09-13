@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terrorist Bomb - v2</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="ui">
+  <div id="menu">
+    <h1>Terrorist Bomb — v2</h1>
+    <div class="btns">
+      <button id="startBtn">Jugar</button>
+      <button id="instrBtn">Instrucciones</button>
+      <button id="assetsBtn">Assets</button>
+    </div>
+    <p class="muted">Versión: completa con mapas aleatorios, power-ups, bosses y sonidos.</p>
+  </div>
+
+  <div id="instructions" class="hidden">
+    <h2>Instrucciones</h2>
+    <ul>
+      <li>Eres un bombardero en la parte superior. Apunta con el mouse y haz clic / presiona espacio para lanzar bombas hacia abajo.</li>
+      <li>Los enemigos se mueven en el terreno abajo. Evita que lleguen al extremo superior.</li>
+      <li>Reúne power-ups, derrota oleadas y enfrenta jefes cada varios niveles.</li>
+    </ul>
+    <button class="backBtn">Volver</button>
+  </div>
+
+  <div id="assetsView" class="hidden">
+    <h2>Assets incluidos</h2>
+    <ul>
+      <li>images/player.png, enemy1.png, enemy2.png, boss.png, bomb.png, explosion.png</li>
+      <li>sounds/background_loop.wav, bomb_launch.wav, explosion.wav, powerup.wav, hit.wav</li>
+    </ul>
+    <button class="backBtn">Volver</button>
+  </div>
+</div>
+
+<canvas id="gameCanvas" width="1000" height="600"></canvas>
+
+<div id="hud">
+  <div id="score">Puntaje: 0</div>
+  <div id="level">Nivel: 1</div>
+  <div id="lives">Vidas: 3</div>
+  <div id="powerups"></div>
+</div>
+
+<div id="gameOver" class="overlay hidden">
+  <h2>Game Over</h2>
+  <p id="finalScore">0</p>
+  <div class="btns">
+    <button id="retryBtn">Reintentar</button>
+    <button id="menuBtn">Menú</button>
+  </div>
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+:root{--bg:#071228;--panel:#0b1620;--accent:#f59e0b;--muted:#9fb0c8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,Helvetica;background:linear-gradient(180deg,var(--bg),#03101a); color:#e6eef8;overflow:hidden}
+#ui{position:absolute;left:18px;top:18px;z-index:60}
+#menu{background:rgba(255,255,255,0.03);padding:16px;border-radius:10px;max-width:320px}
+.btns{display:flex;gap:8px;margin-top:10px}
+button{background:var(--accent);border:none;padding:8px 12px;border-radius:8px;color:#041018;cursor:pointer;font-weight:600}
+button:hover{filter:brightness(1.05)}
+.hidden{display:none}
+canvas{display:block;margin:0 auto;position:absolute;left:50%;transform:translateX(-50%);top:28px;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.6)}
+#hud{position:absolute;right:18px;top:18px;background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;min-width:180px;text-align:left}
+#hud div{margin-bottom:6px}
+.overlay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.6);padding:20px;border-radius:12px;text-align:center}
+.muted{color:var(--muted);font-size:13px}
