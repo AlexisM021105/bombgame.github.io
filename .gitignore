@@ -1,0 +1,39 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Node / paquetes
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Archivos de editor / IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Bases de datos locales
+*.sqlite
+*.db
+
+# Archivos temporales / logs
+*.log
+*.tmp
+*.bak
+
+# Archivos que se generan al compilar (si los hubiera)
+dist/
+build/
+
+# Configuración local
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# GitHub Pages: no ignorar index.html, js/, css/, assets/
